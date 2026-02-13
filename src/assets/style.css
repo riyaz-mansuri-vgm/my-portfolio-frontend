@@ -347,3 +347,14 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
+ .user-section label {
+  position: absolute;
+  inset-x: 0;
+  top: -40px;
+  z-index: -10;
+  transform: translateZ(0);
+  overflow: hidden;
+  filter: blur(3xl);
+  color: #fff !important;
+  
+}

@@ -7,12 +7,15 @@ import Footer from "./components/Footer";
 import Projects from "./pages/products/Projects";
 import UserList from "./pages/users/UserList";
 import UserDetails from "./pages/users/UserDetails";
+import { Toaster } from 'react-hot-toast';
 
 
 function App() {
   return (
     <Router>
+
       <Navbar />
+            <Toaster position="top-right" reverseOrder={false} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
